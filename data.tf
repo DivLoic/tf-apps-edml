@@ -26,3 +26,5 @@ data "google_compute_zones" "available" {
   project = var.gcp_project
   region  = var.gcp_region
 }
+
+data "google_compute_lb_ip_ranges" "ranges" {}
