@@ -14,7 +14,7 @@ terraform {
 resource "google_container_cluster" "apps-kube" {
   provider           = google-beta
   name               = "edml-apps-kube"
-  location           = "europe-west2-b"
+  location           = "europe-west1-b"
   network            = google_compute_network.apps_kube_network.name
   subnetwork         = google_compute_subnetwork.apps_kube_subnet.name
   initial_node_count = var.kube_nodes
